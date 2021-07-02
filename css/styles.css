@@ -1,13 +1,73 @@
+.background {
+  background-image: url(../bg/bg.svg);
+  background-size: cover;
+}
 /*                               TOP container */
 .navbar-brand {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 1.8rem;
 }
+input {
+  outline: none;
+}
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+
+input[type=search] {
+  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 55px;
+
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+input[type=search]:focus {
+  width: 250px;
+  background-color: #fff;
+  border-color: #66CC75;
+
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+  color: #999;
+}
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+
+/*                               main-focus */
+.main-focus {
+  text-align: center;
+  padding: 4rem;
+}
+
+
+
 /*                               middle container */
 .middle-container {
-  height: 90vh;
-  background-color: #BEAEE2;
+  display: flex;
+  padding: 0 4rem 4%;
 }
 
 .glass {
@@ -16,37 +76,40 @@
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
   );
+  backdrop-filter: blur(2rem);
   border-radius: 1rem;
   height: 55vh;
-  width: 45%;
-  position: absolute;
-  left: 10rem;
-  top: 18rem;
+  flex: 5;
+  margin-right: 10%;
   overflow: hidden;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
 
 .faculty{
   width: 40%;
   padding-bottom: 140px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
     rgba(255, 255, 255, 0.3)
-  );
+  ); */
+  overflow: hidden;
 }
 .btn {
   border: 0;
   min-width: 30vh;
   text-align: left;
-  margin: 0.3rem 1.5rem;
+  margin: 0.3rem 1rem;
   padding: 0.5rem 0;
   padding-left: 0.5rem;
   color: #658ec6;
 }
 
 .department {
-  height: 50vh;
+  height: 55vh;
   width: 60%;
+  overflow-y:auto;
 }
 
 .department a {
@@ -63,11 +126,80 @@
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
+    rgba(255, 255, 255, 0.5)
   );
+
+  border: none;
 }
 
 .depts p {
   padding: 1px;
   margin: auto 0;
+}
+
+.glass-2 {
+  flex: 2;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+  border-radius: 1rem;
+  height: 55vh;
+  overflow: hidden;
+}
+
+.glass-2-head {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  padding: 0.5rem 0;
+  text-align: center;
+
+}
+.glass-2-body {
+  text-align: center;
+  padding-top: 2rem;
+}
+.submit {
+  text-decoration: none;
+  text-align: center;
+  width: 50%;
+}
+.submit div {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #999;
+  margin-top: 1rem;
+}
+
+.glass-2-hr {
+  color: #000;
+  border: none;
+  height: 3px !important;
+  opacity: 1;
+  width: 40%;
+  margin: 2rem auto;
+}
+/*                              bottom-container */
+
+.bottom-container {
+  text-align: center;
+  padding: 2% 15%;
+}
+.footer-icon {
+  margin: 1.5rem 1rem;
+  color: #343a40;
+}
+
+.footer-icon:hover {
+  color: #5F6368;
+}
+
+
+.hidden {
+  display: none;
 }
