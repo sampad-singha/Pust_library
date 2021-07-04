@@ -17,24 +17,24 @@
 <body>
   <div class="background">
     <div class="top-container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <nav class="navbar navbar-expand-md  navbar-custom"> <!-- navbar-light bg-light -->
         <div class="container-fluid">
           <a class="navbar-brand" href="#">eLibrary</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              <form>
-                <input type="search" placeholder="Search">
-              </form>
+            <form class=" search">
+              <input type="search" placeholder="Search">
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav nav-items">
+                <a class="nav-link active navbar-text" aria-current="page" href="#"><i class="fas fa-home"></i> Home</a>
+                <a class="nav-link navbar-text" href="#">Features</a>
+                <a class="nav-link navbar-text" href="#">Pricing</a>
+                <a class="nav-link disabled navbar-text" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </div>
             </div>
-          </div>
         </div>
       </nav>
     </div>
@@ -47,12 +47,10 @@
     </div>
     
     <div class="middle-container">
-      <div class="glass container-fluid">
-        <div class="row">
-    
-          <div class=" faculty">
-            <div class="faculty-head text-center">
-              <h4>Faculty</h4>
+      <div class="dash-1">
+          <div class="faculty glass">
+            <div class="text-center">
+              <h4 class="glass-head">Faculty</h4>
             </div>
             <button type="button" class="btn btn-outline-primary">Engineering and Technology</button><br>
             <button type="button" class="btn btn-outline-primary">Science</button><br>
@@ -61,65 +59,38 @@
             <button type="button" class="btn btn-outline-primary">Life and Earth Science</button><br>
           </div>
     
-          <div class="department ">
-            <div class="faculty-head text-center">
-              <h4>Departments</h4>
+          <div class="department glass">
+            <div class="text-center">
+              <h4 class="glass-head">DEPARTMENTS</h4>
             </div>
+
             <div class="dept-group">
-              <a class="detps" href="#">
-                <div class="depts">
-                  <p>Computer Science & Engineering</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="depts">
-                  <p>Electrical & Electronic Engineering</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="depts">
-                  <p> Electrical, Electronic & Communication Engineering</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="depts">
-                  <p>Information & Communication Engineering</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="depts">
-                  <p>Civil Engineering</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="depts">
-                  <p>Architecture</p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="depts">
-                  <p>Urban & Regional Planning</p>
-                </div>
-              </a>
+              <a class="links" href="#">Computer Science & Engineering</a>
+              <a class="links" href="#">Electrical & Electronic Engineering</a>
+              <a class="links" href="#">Electrical, Electronic & Communication Engineering</a>
+              <a class="links" href="#">Information & Communication Engineering</a>
+              <a class="links" href="#">Civil Engineering</a>
+              <a class="links" href="#">Architecture</a>
+              <a class="links" href="#">Urban & Regional Planning</a>
             </div>
-          </div>
         </div>
       </div>
-      <div class="glass-2">
-        <div class="glass-2-head">
-          <h4>Help us grow</h4>
+
+      <div class="dash-2 glass">
+        <div class="dash-2-head">
+          <h4 class="glass-head text-center">Help us grow</h4>
         </div>
-        <div class="glass-2-body">
+        <div class="dash-2-body">
           <h6>Submit assets</h6>
           <a class="submit" href="#">
-            <div class="depts">
+            <div class="links">
               <p>Submit</p>
             </div>
           </a>
-          <hr class="glass-2-hr">
+          <hr class="dash-2-hr">
           <h6>Have a suggestion?</h6>
           <a class="submit" href="mailto:sampad.190133@s.pust.ac.bd">
-            <div class="depts">
+            <div class="links">
               <p>Mail us</p>
             </div>
           </a>

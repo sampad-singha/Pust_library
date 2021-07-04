@@ -1,12 +1,41 @@
 .background {
-  background-image: url(../bg/bg.svg);
-  background-size: cover;
+  /* background-image: url(../bg/bg.svg);
+  background-size: cover; */
+  /* background: linear-gradient(
+    to right top,
+    #0798F2,
+    #72DBF2
+  ); */
+  /* background-image: linear-gradient(32deg, #574BCD 0% , #2999AD 48% , #41E975 100%); */
+  /* background-image: linear-gradient(59deg, #5C2774 0% , #335CC5 48% , #637FFD 100%); */
+  background-image: linear-gradient(20deg, #574BCD 0% , #2999AD 48% , #41E975 100%);
 }
+
 /*                               TOP container */
+.navbar-custom {
+  background:rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2rem);
+  
+}
+.navbar-toggler {
+  color: tomato;
+}
+
 .navbar-brand {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 1.8rem;
+  max-width: 20%;
+  color: #fff;
+}
+.navbar-text {
+  color: rgb(75, 74, 74);
+}
+.nav-items {
+  margin: 0 0 0 auto;
+}
+.search {
+  margin-left: 5%;
 }
 input {
   outline: none;
@@ -38,7 +67,7 @@ input[type=search] {
   transition: all .3s;
 }
 input[type=search]:focus {
-  width: 250px;
+  width: 200px;
   background-color: #fff;
   border-color: #66CC75;
 
@@ -60,42 +89,48 @@ input::-webkit-input-placeholder {
 .main-focus {
   text-align: center;
   padding: 4rem;
+  color: #fff;
 }
-
 
 
 /*                               middle container */
-.middle-container {
-  display: flex;
-  padding: 0 4rem 4%;
+.glass {
+  background:rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: -5px 5px 20px -5px rgba(31, 38, 135, 0.37);
+  border-top: 3px solid rgba(255, 255, 255, 0.5);
+  border-right: 3px solid rgba(255, 255, 255, 0.5);
+}
+.glass-head {
+  color: #343a40;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 0;
+  display: inline-block;
+  padding: 10px 2rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
 }
 
-.glass {
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
-  backdrop-filter: blur(2rem);
-  border-radius: 1rem;
-  height: 55vh;
+.middle-container {
+  display: flex;
+  padding: 0 4% 8%;
+}
+
+.dash-1 {
+  height: 58vh;
   flex: 5;
   margin-right: 10%;
-  overflow: hidden;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
+  /* overflow: hidden; */
+  display: flex;
+  padding-right: 0;
 }
 
 .faculty{
-  width: 40%;
-  padding-bottom: 140px;
-  /* background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  ); */
-  overflow: hidden;
+  overflow:hidden;
+  flex: 2;
+  border-radius: 1rem;
 }
+
 .btn {
   border: 0;
   min-width: 30vh;
@@ -103,66 +138,59 @@ input::-webkit-input-placeholder {
   margin: 0.3rem 1rem;
   padding: 0.5rem 0;
   padding-left: 0.5rem;
-  color: #658ec6;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 1);
+  color: #343a40;
 }
 
 .department {
-  height: 55vh;
-  width: 60%;
+  flex:3;
+  margin-left: 2%;
   overflow-y:auto;
+  border-radius: 1rem;
 }
 
-.department a {
+.dept-group {
+  padding: 0 2%;
+}
+
+.links {
+  display: block;
   text-decoration: none;
-  color: #658ec6;
-}
-
-.depts {
+  color: #fff;
   padding: 0.5rem;
   margin: 0.5rem 0;
   border-radius: 0.5rem;
 }
-.depts:hover {
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.5)
-  );
-
-  border: none;
+.links:hover {
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
+  color: #343a40;
 }
 
-.depts p {
+.links p {
   padding: 1px;
   margin: auto 0;
 }
 
-.glass-2 {
+.dash-2 {
   flex: 2;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
-  backdrop-filter: blur(2rem);
   border-radius: 1rem;
-  height: 55vh;
+  height: 58vh;
   overflow: hidden;
 }
 
-.glass-2-head {
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.5)
-  );
-  padding: 0.5rem 0;
+.dash-2-head {
   text-align: center;
 
 }
-.glass-2-body {
+.dash-2-body {
   text-align: center;
   padding-top: 2rem;
+  color: #fff;
 }
 .submit {
   text-decoration: none;
@@ -172,15 +200,15 @@ input::-webkit-input-placeholder {
 .submit div {
   width: 50%;
   margin: 0 auto;
-  border: 1px solid #999;
+  border: 3px solid rgba(255, 255, 255, 0.7);
   margin-top: 1rem;
 }
 
-.glass-2-hr {
-  color: #000;
+.dash-2-hr {
+  color: #fff;
   border: none;
   height: 3px !important;
-  opacity: 1;
+  opacity: 0.5;
   width: 40%;
   margin: 2rem auto;
 }
@@ -201,5 +229,5 @@ input::-webkit-input-placeholder {
 
 
 .hidden {
-  display: none;
+  visibility: hidden;
 }
