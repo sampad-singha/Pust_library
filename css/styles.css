@@ -1,87 +1,7 @@
 .background {
-  /* background-image: url(../bg/bg.svg);
-  background-size: cover; */
-  /* background: linear-gradient(
-    to right top,
-    #0798F2,
-    #72DBF2
-  ); */
-  /* background-image: linear-gradient(32deg, #574BCD 0% , #2999AD 48% , #41E975 100%); */
-  /* background-image: linear-gradient(59deg, #5C2774 0% , #335CC5 48% , #637FFD 100%); */
-  background-image: linear-gradient(20deg, #574BCD 0% , #2999AD 48% , #41E975 100%);
-}
-
-/*                               TOP container */
-.navbar-custom {
-  background:rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(2rem);
-  
-}
-.navbar-toggler {
-  color: tomato;
-}
-
-.navbar-brand {
-  font-family: 'Montserrat';
-  font-weight: 700;
-  font-size: 1.8rem;
-  max-width: 20%;
-  color: #fff;
-}
-.navbar-text {
-  color: rgb(75, 74, 74);
-}
-.nav-items {
-  margin: 0 0 0 auto;
-}
-.search {
-  margin-left: 5%;
-}
-input {
-  outline: none;
-}
-input[type=search] {
-  -webkit-appearance: textfield;
-  box-sizing: content-box;
-  font-family: inherit;
-  font-size: 100%;
-}
-input::-webkit-search-decoration,
-input::-webkit-search-cancel-button {
-  display: none;
-}
-
-
-input[type=search] {
-  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-  border: solid 1px #ccc;
-  padding: 9px 10px 9px 32px;
-  width: 55px;
-
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  border-radius: 10em;
-
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  transition: all .3s;
-}
-input[type=search]:focus {
-  width: 200px;
-  background-color: #fff;
-  border-color: #66CC75;
-
-  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-  box-shadow: 0 0 5px rgba(109,207,246,.5);
-}
-
-
-input:-moz-placeholder {
-  color: #999;
-}
-input::-webkit-input-placeholder {
-  color: #999;
+  background-image: linear-gradient(10deg, #2999AD  0% ,#00B5CC 35% ,#207398  20%);
+  /* background-image: linear-gradient(10deg, #538FFB   0% ,   #00B5CC  45%); */
+  background-attachment:fixed;
 }
 
 
@@ -92,24 +12,19 @@ input::-webkit-input-placeholder {
   color: #fff;
 }
 
+.main-head {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.main-body {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 
 /*                               middle container */
-.glass {
-  background:rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
-  box-shadow: -5px 5px 20px -5px rgba(31, 38, 135, 0.37);
-  border-top: 3px solid rgba(255, 255, 255, 0.5);
-  border-right: 3px solid rgba(255, 255, 255, 0.5);
-}
-.glass-head {
-  color: #343a40;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 0.5rem 0;
-  display: inline-block;
-  padding: 10px 2rem;
-  border-radius: 2rem;
-  margin-top: 1rem;
-}
 
 .middle-container {
   display: flex;
@@ -117,10 +32,9 @@ input::-webkit-input-placeholder {
 }
 
 .dash-1 {
-  height: 58vh;
+  min-height: 30vw;
   flex: 5;
   margin-right: 10%;
-  /* overflow: hidden; */
   display: flex;
   padding-right: 0;
 }
@@ -131,77 +45,70 @@ input::-webkit-input-placeholder {
   border-radius: 1rem;
 }
 
-.btn {
-  border: 0;
-  min-width: 30vh;
-  text-align: left;
-  margin: 0.3rem 1rem;
-  padding: 0.5rem 0;
-  padding-left: 0.5rem;
-  color: #fff;
-  border-radius: 0.5rem;
-}
-.btn:hover {
-  background: rgba(255, 255, 255, 1);
-  color: #343a40;
-}
-
 .department {
   flex:3;
   margin-left: 2%;
   overflow-y:auto;
   border-radius: 1rem;
 }
+html {
+  --scrollbarBG: #ffffff00;
+  --thumbBG: #cae1ec;
+}
+.department::-webkit-scrollbar {
+  width: 10px;
+  background: none;
+  
+}
+.department {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.department::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 1rem;
+}
+.department::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+.department::-webkit-scrollbar-button {
+  visibility: hidden;
+}
 
 .dept-group {
-  padding: 0 2%;
-}
-
-.links {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  border-radius: 0.5rem;
-}
-.links:hover {
-  background: rgba(255, 255, 255, 1);
-  opacity: 1;
-  color: #343a40;
-}
-
-.links p {
-  padding: 1px;
-  margin: auto 0;
+  padding: 0 0 0 2%; 
 }
 
 .dash-2 {
   flex: 2;
   border-radius: 1rem;
-  height: 58vh;
+  min-height: 30vw;
   overflow: hidden;
-}
-
-.dash-2-head {
-  text-align: center;
-
+  margin: 0 auto;
 }
 .dash-2-body {
   text-align: center;
-  padding-top: 2rem;
   color: #fff;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.dash-2-head {
+  margin-bottom: 2rem;
 }
 .submit {
   text-decoration: none;
   text-align: center;
   width: 50%;
-}
-.submit div {
   width: 50%;
-  margin: 0 auto;
+  margin: 1rem auto 2rem;
   border: 3px solid rgba(255, 255, 255, 0.7);
-  margin-top: 1rem;
+  font-weight: 400;
+}
+.submit-text {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .dash-2-hr {
@@ -210,13 +117,22 @@ input::-webkit-input-placeholder {
   height: 3px !important;
   opacity: 0.5;
   width: 40%;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 /*                              bottom-container */
 
 .bottom-container {
   text-align: center;
   padding: 2% 15%;
+  background-color: #d4e9e9;
+}
+.footer-text {
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+.footer-highlight {
+  font-family: 'Montserrat';
+  font-weight: 500;
 }
 .footer-icon {
   margin: 1.5rem 1rem;
@@ -227,7 +143,51 @@ input::-webkit-input-placeholder {
   color: #5F6368;
 }
 
+/*                                  Media Query */
 
-.hidden {
-  visibility: hidden;
+@media only screen and (max-width: 1212px) {
+
+  .middle-container{
+    display: block;
+  }
+  .dash-1 {
+    margin: 2%;
+  }
+
+  .dash-2 {
+    margin: 8% auto 0;
+    width: 40%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .dash-2 {
+    width: 70%;
+  }
+}
+
+
+@media only screen and (max-width: 499px) {
+  .hidden-xs {
+  display: none;
+  }
+  .hidden {
+    display: block;
+  }
+
+  .bottom-container {
+  padding: 2% 8%;
+  }
+  .department {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .dash-2 {
+    width: 90%;
+  }
+  .main-body {
+    display: none;
+  }
 }

@@ -1,0 +1,30 @@
+.middle-container {
+	padding: 2% 10%;
+}
+
+.book-cover {
+	width: 120px;
+	height: 162px;
+}
+.row {
+	margin: 0;
+}
+
+.book {
+	margin: 5% 0;
+	/* padding: 2%; */
+	text-align: center;
+	
+}
+
+.inner-book {
+	margin: 0 5%;
+	padding: 10% 0;
+	background-color:lightcyan;
+	border-radius: .5rem;
+}
+
+.card{
+	background: none;
+	border: none;
+}
