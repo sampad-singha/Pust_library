@@ -1,5 +1,5 @@
 .middle-container {
-	padding: 2% 10%;
+	padding: 2% 0;
 }
 
 .book-cover {
@@ -12,19 +12,32 @@
 
 .book {
 	margin: 5% 0;
-	/* padding: 2%; */
 	text-align: center;
+	display: flex;
+	background-color:lightcyan;
+	border-radius: .5rem;
 	
 }
 
 .inner-book {
 	margin: 0 5%;
 	padding: 10% 0;
-	background-color:lightcyan;
-	border-radius: .5rem;
+	flex: 4;
+}
+
+.book-detail {
+	flex: 6;
 }
 
 .card{
 	background: none;
 	border: none;
+}
+
+.links {
+	background-color: #000;
+	
+}
+.downlaod {
+	margin: 1rem auto 0;
 }
