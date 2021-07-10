@@ -14,19 +14,20 @@
 	margin: 5% 0;
 	text-align: center;
 	display: flex;
-	background-color:lightcyan;
+	background-color:rgba(224, 255, 255, 0.178);
 	border-radius: .5rem;
 	
 }
 
 .inner-book {
 	margin: 0 5%;
-	padding: 10% 0;
-	flex: 4;
+	/* padding: 5% 0; */
+	flex: 3;
 }
 
 .book-detail {
-	flex: 6;
+	flex: 7;
+	text-align: left;
 }
 
 .card{
@@ -39,5 +40,8 @@
 	
 }
 .downlaod {
-	margin: 1rem auto 0;
+	margin: 1rem auto;
+	text-align: center;
+	position: relative;
+	bottom: 0;
 }

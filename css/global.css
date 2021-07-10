@@ -1,6 +1,6 @@
 /*                                              NAVBAR */
 .navbar-custom {
-  background:rgba(255, 255, 255, 0.3);
+  background:rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2rem);
   box-shadow: 0px 2px 20px -5px rgba(31, 38, 135, 0.37);
 }
@@ -153,7 +153,7 @@ input::-webkit-input-placeholder {
   display: none;
 }
 .background {
-  background-image: linear-gradient(10deg, #2999AD 0%, #00B5CC 35%, #207398 20%);
-  /* background-image: linear-gradient(10deg, #538FFB   0% ,   #00B5CC  45%); */
-  background-attachment: fixed;
+  /* background-image: linear-gradient(10deg, #2999AD 0%, #00B5CC 35%, #207398 20%); */
+  background-image: url("../images/mountain.jpg");
+  background-size: cover;
 }
