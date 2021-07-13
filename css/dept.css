@@ -1,5 +1,6 @@
 .middle-container {
 	padding: 2% 0;
+	width: 90%;
 }
 
 .book-cover {
@@ -11,12 +12,20 @@
 }
 
 .book {
-	margin: 5% 0;
+	margin: 2rem 0;
 	text-align: center;
-	display: flex;
-	background-color:rgba(224, 255, 255, 0.178);
 	border-radius: .5rem;
 	
+}
+
+.book-container {
+	display: flex;
+	margin: 0 1rem;
+	padding: 1rem 0;
+	border-radius: 1rem;
+	/* background-color: rgba(255, 255, 255, 0.562); */
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+	backdrop-filter: blur(1rem);
 }
 
 .inner-book {
@@ -28,6 +37,11 @@
 .book-detail {
 	flex: 7;
 	text-align: left;
+	position: relative;
+	color: rgb(43, 43, 43);
+	font-family: 'Open Sans';
+	font-weight: 300;
+	padding-right: 1rem;
 }
 
 .card{
@@ -35,13 +49,11 @@
 	border: none;
 }
 
-.links {
-	background-color: #000;
-	
-}
 .downlaod {
-	margin: 1rem auto;
+	margin: 1rem auto 0;
 	text-align: center;
-	position: relative;
+	position: absolute;
 	bottom: 0;
+	/* border: 3px solid rgb(43, 43, 43); */
+	background-color: rgb(71, 71, 71);
 }
